@@ -39,3 +39,35 @@ console.log(managerSalary);
 console.log(ctoSalary);
 console.log(developerSalary);
 console.log(otherSalary);
+
+
+
+function addStipendio ( name){
+switch (name) {
+  case  'Christian':
+  return  '10000' ;
+    
+    break;
+    case 'Christian':
+    return  '10000' ;
+      
+      break;
+      case 'Christian':
+      return  '10000' ;
+        
+        break;
+        case 'Luca':
+        return  '900' ;
+          
+          break;
+ 
+}
+
+
+
+}
+addChristian= addStipendio('Christian');
+console.log( addChristian);
+
+addLuca= addStipendio('Luca');
+console.log( addLuca);

@@ -36,3 +36,31 @@ console.log(managerSalary);
 console.log(ctoSalary);
 console.log(developerSalary);
 console.log(otherSalary);
+
+function calcolaStipendio( ruolo){
+  if( ruolo==='dottore'){
+    return  ruolo +='5000 euro';
+
+  }
+  else if (ruolo==='avvocato') {
+    return  ruolo +='3000 euro';
+
+  }
+  else if (ruolo==='ingegnere'){
+    return  ruolo +='3000 euro';
+  }
+  else{
+        return ruolo += 1000;
+  }
+}
+
+ const dottoreStipendio= calcolaStipendio('dottore');
+  const avvocatoStipendio= calcolaStipendio('avvocato');
+  const ingegnereStipendio= calcolaStipendio('ingegnere');
+ const defaultStipendio=calcolaStipendio('default')
+
+console.log(dottoreStipendio);
+console.log(avvocatoStipendio);
+console.log(ingegnereStipendio);
+console.log(defaultStipendio);
+
