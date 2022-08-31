@@ -23,6 +23,8 @@ const persons = [
   { name: 'Sandra', age: 34 },
   { name: 'Alice', age: 28 }
 ];
+console.log(persons)
+console.log(somma);
 
 
 
