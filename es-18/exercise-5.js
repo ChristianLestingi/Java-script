@@ -1,8 +1,18 @@
 function memoize(fn) {
   let cache = {};
+  return (number)=> {
+    if(number in cache){
+    console.log('Fetching from cache for ' + number);
+    return cache[number];
+  }
+  console.log('Calculating result for' + number);
+ const calculated= factorial(number);
+ cache[number]= calculated;
+  return calculated;
   
   
- 
+  
+  }
     
   }
 
@@ -19,4 +29,5 @@ let factory = memoize(factorial);
 console.log(factory(10));
 console.log(factory(6));
 console.log(factory(5));
-console.log(cache);
+
+
