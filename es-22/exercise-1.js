@@ -5,16 +5,28 @@ const person = {
   job: 'Web Developer',
   fullName (){
     return ` ${ this.firstName} ${ this.lastName}`;
-    
+
 
   },
   info(){
     return ` ${ this.fullName()} ${ this.age} ${ this.job}`
   }
-  
+
 }
 
 
 
 console.log(person.fullName()); // John Doe
 console.log(person.info()); // John Doe, 25 - Web Developerre
+
+
+
+
+
+
+
+
+
+
+
+

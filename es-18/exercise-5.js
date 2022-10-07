@@ -9,11 +9,11 @@ function memoize(fn) {
  const calculated= factorial(number);
  cache[number]= calculated;
   return calculated;
-  
-  
-  
+
+
+
   }
-    
+
   }
 
 
@@ -22,7 +22,7 @@ function factorial(x) {
     return 1;
   }
 
-  return x * factorial(x - 1);
+  return  factorial(x - 1) * x;
 }
 
 let factory = memoize(factorial);

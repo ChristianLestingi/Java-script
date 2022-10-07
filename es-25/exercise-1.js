@@ -1,6 +1,7 @@
 const person = {
   firstName: '',
   lastName: '',
+
   get firstNameProp() {
     return this.firstName;
 
@@ -16,7 +17,7 @@ const person = {
     return this.lastName = surname;
   },
 
-   fullName() { 
+   fullName() {
     return`${this.firstName} ${this.lastName}`
   }
 }
@@ -30,6 +31,9 @@ const person = {
 
  simon.firstNameProp='Simon';
  simon.lastNameProp='Collins';
- 
+
 console.log(john.fullName()); // John Doe
 console.log(simon.fullName()); // Simon Collins
+
+
+

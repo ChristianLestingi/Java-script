@@ -19,11 +19,11 @@ function calculateSalary(role) {
       case 'developer':
       return '1500'
       break;
-    
+
       default:
       return '1000'
-      
-    
+
+
 
   }
 }
@@ -42,32 +42,4 @@ console.log(otherSalary);
 
 
 
-function addStipendio ( name){
-switch (name) {
-  case  'Christian':
-  return  '10000' ;
-    
-    break;
-    case 'Christian':
-    return  '10000' ;
-      
-      break;
-      case 'Christian':
-      return  '10000' ;
-        
-        break;
-        case 'Luca':
-        return  '900' ;
-          
-          break;
- 
-}
 
-
-
-}
-addChristian= addStipendio('Christian');
-console.log( addChristian);
-
-addLuca= addStipendio('Luca');
-console.log( addLuca);

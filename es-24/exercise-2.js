@@ -6,3 +6,4 @@ const person = {
 
 // Print values of person using Object.values
 console.log( Object.values(person));
+

@@ -1,7 +1,7 @@
 function pow(base) {
   return function ( number){
     return Math.pow (base,number);
-    
+
   }
 }
 
@@ -17,3 +17,5 @@ console.log('--- Power of 5 ---');
 console.log(pow5(4));
 console.log(pow5(2));
 console.log(pow5(8));
+
+

@@ -18,3 +18,4 @@ console.log(greetPaulWithHello);
 console.log(greetPaulWithHi);
 console.log(greetJohnWithBye);
 console.log(greetSimonWithHello);
+
