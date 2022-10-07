@@ -1,6 +1,16 @@
 function getKeys(obj) {
-  return Object.keys(obj);
-}
+  const k=[];
+
+  for (const key in person) {
+
+
+    k.push(key)
+
+    }
+    return k;
+  }
+
+
 
 const person = {
   firstName: 'John',
