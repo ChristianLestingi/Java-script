@@ -1,0 +1,38 @@
+<html>
+  <body>
+    <div id="container">
+      <form>
+        <div>
+          <label>First Name:</label>
+          <input type="text" class="form-input" id="firstName" value="Mario" />
+        </div>
+        <div>
+          <label>Last Name:</label>
+          <input type="text" class="form-input" id="lastName" value="Rossi" />
+        </div>
+        <div>
+          <label>Age:</label>
+          <input type="number" class="form-input" id="age" value="25" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  // code here
+  let divs = document.querySelectorAll('form > div');
+  for (let div of divs) {
+    console.log(div.querySelector('label').textContent,div.querySelector('.form-input').value)
+
+  }
+
+// document.querySelectorAll('form > div').forEach(el => {
+//     console.log(el.querySelector('label').textContent,el.querySelector('.form-input').value)
+//   })
+
+
+
+
+
+</script>

@@ -1,0 +1,63 @@
+<html>
+  <body>
+    <div id="container">
+      <h2>Person's Form</h2>
+      <form id="person-form">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  // Code here
+
+  window.addEventListener("load", initForm);
+
+  function initForm() {
+    const form = document.getElementById("person-form");
+    const label = document.createElement("label");
+    form.appendChild(label);
+    label.innerHTML = "First Name";
+    const input = document.createElement("input");
+    label.appendChild(input);
+
+    const label2 = document.createElement("label");
+    label2.innerHTML = "Last Name";
+    const input2 = document.createElement("input");
+    label.appendChild(label2);
+    label2.appendChild(input2);
+
+    const label3 = document.createElement("label");
+    label3.innerHTML = "Age";
+    const input3 = document.createElement("input");
+    input3.setAttribute("type", "number");
+    label2.appendChild(label3);
+    label3.appendChild(input3);
+  }
+
+  const submit = document.querySelector("button");
+  submit.addEventListener("click", submitPersonForm);
+
+  function submitPersonForm(e) {
+    e.preventDefault();
+    const person = {};
+    const value = document.querySelectorAll("input");
+    // for (let index = 0; index < value.length; index++) {
+    //   const n = value[0].value;
+    //   person.innerHTML = n;
+    //   const c = value[1].value;
+    //   person.innerHTML = c;
+    //   const e = value[2].value;
+    //   person.innerHTML = e;
+
+    //   console.log(person);
+    // }
+    for (const input of value) {
+
+
+
+      console.log(person)
+    }
+  }
+</script>
