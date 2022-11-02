@@ -69,7 +69,29 @@
     form.prepend(firstNameInput);
 
     form.addEventListener("submit", submitPersonForm);
+
+
+
+
   }
 
   window.addEventListener("DOMContentLoaded", initForm);
+
+  const event=new CustomEvent('personFormLoaded')
+
+
+  document.addEventListener('message', function(event){
+    console.log('Person Form Loaded');
+
+  })
+
+dispatchEvent();
+
+
+
+
+
+
+
+
 </script>

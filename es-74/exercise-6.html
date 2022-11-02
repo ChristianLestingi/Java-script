@@ -15,49 +15,60 @@
   window.addEventListener("load", initForm);
 
   function initForm() {
-    const form = document.getElementById("person-form");
-    const label = document.createElement("label");
-    form.appendChild(label);
-    label.innerHTML = "First Name";
-    const input = document.createElement("input");
-    label.appendChild(input);
+    let form = document.getElementById("person-form");
+    //creazione label
+    let labelFirstname = document.createElement("label");
+    let labelLastname = document.createElement("label");
+    let labelAge = document.createElement("label");
+    //creazione testo label
+    labelFirstname.textContent = " First Name";
+    labelLastname.textContent = " Last Name";
+    labelAge.textContent = " Age";
 
-    const label2 = document.createElement("label");
-    label2.innerHTML = "Last Name";
-    const input2 = document.createElement("input");
-    label.appendChild(label2);
-    label2.appendChild(input2);
+    // aggiungere le label al form
 
-    const label3 = document.createElement("label");
-    label3.innerHTML = "Age";
-    const input3 = document.createElement("input");
-    input3.setAttribute("type", "number");
-    label2.appendChild(label3);
-    label3.appendChild(input3);
-  }
+    form.appendChild(labelFirstname);
+    form.appendChild(labelLastname);
+    form.appendChild(labelAge);
 
-  const submit = document.querySelector("button");
-  submit.addEventListener("click", submitPersonForm);
+    // creazione input
 
-  function submitPersonForm(e) {
-    e.preventDefault();
-    const person = {};
-    const value = document.querySelectorAll("input");
-    // for (let index = 0; index < value.length; index++) {
-    //   const n = value[0].value;
-    //   person.innerHTML = n;
-    //   const c = value[1].value;
-    //   person.innerHTML = c;
-    //   const e = value[2].value;
-    //   person.innerHTML = e;
+    inputFirstname = document.createElement("input");
+    inputLastname = document.createElement("input");
+    inputAge = document.createElement("input");
 
-    //   console.log(person);
-    // }
-    for (const input of value) {
+    // aggiungere attributi all'input
 
+    inputFirstname.setAttribute("id", "first");
+    inputFirstname.setAttribute("type", "text");
+    inputFirstname.setAttribute("name", "first");
+    inputLastname.setAttribute("id", "second");
+    inputLastname.setAttribute("type", "text");
+    inputLastname.setAttribute("name", "second");
+    inputAge.setAttribute("id", "third");
+    inputAge.setAttribute("type", "number");
+    inputAge.setAttribute("name", "third");
 
+    // aggiungere gli input al form
 
-      console.log(person)
+    form.appendChild(inputFirstname);
+    form.appendChild(inputLastname);
+    form.appendChild(inputAge);
+
+    const submit = document.querySelector("button");
+    submit.addEventListener("click", submitPersonForm);
+
+    function submitPersonForm(e) {
+      e.preventDefault();
+
+      let value1 = document.getElementById("first").value;
+      person.innerHTML = value1;
+      let value2 = document.getElementById("second").value;
+      person.innerHTML = value1;
+      let value3 = document.getElementById("third").value;
+      person.innerHTML = value3;
+
+      console.log(person);
     }
   }
 </script>
