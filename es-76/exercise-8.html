@@ -15,4 +15,21 @@
 
 <script>
   // code here
+
+  const elements = document.querySelectorAll(".hero-list-item");
+  console.log(elements);
+
+  for (const element of elements){
+
+    element.addEventListener("mouseover", (e) => {
+      element.style.color = "red";
+    });
+
+
+    element.addEventListener("mouseout", (e) => {
+      element.style.color = "transparent";
+    });
+  }
+
+
 </script>

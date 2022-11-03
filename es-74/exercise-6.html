@@ -39,15 +39,15 @@
 
     // aggiungere attributi all'input
 
-    inputFirstname.setAttribute("id", "first");
-    inputFirstname.setAttribute("type", "text");
-    inputFirstname.setAttribute("name", "first");
-    inputLastname.setAttribute("id", "second");
-    inputLastname.setAttribute("type", "text");
-    inputLastname.setAttribute("name", "second");
-    inputAge.setAttribute("id", "third");
-    inputAge.setAttribute("type", "number");
-    inputAge.setAttribute("name", "third");
+    inputFirstname.id='first';
+    inputFirstname.type= 'text';
+    inputFirstname.name= 'first'
+    inputLastname.id='second'
+    inputLastname.type='text';
+    inputLastname.name= 'second';
+    inputAge.id='third';
+    inputAge.type='number';
+    inputAge.name='third';
 
     // aggiungere gli input al form
 
@@ -61,6 +61,8 @@
     function submitPersonForm(e) {
       e.preventDefault();
 
+      person={};
+
       let value1 = document.getElementById("first").value;
       person.innerHTML = value1;
       let value2 = document.getElementById("second").value;
@@ -71,4 +73,5 @@
       console.log(person);
     }
   }
+  
 </script>
